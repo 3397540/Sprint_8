@@ -1,4 +1,4 @@
-import io.qameta.allure.junit4.DisplayName;
+import io.qameta.allure.Description;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Assert;
 import org.junit.Test;
@@ -43,7 +43,7 @@ public class AccountParameterizedTest {
 
 
     @Test
-    @DisplayName("Name for card must contains 1 Whitespace, do not have Whitespace as first or last character and " +
+    @Description("Name for card must contains 1 Whitespace, do not have Whitespace as first or last character and " +
             "it size must be between 3-19 characters inclusive")
     public void blankValueReturnsFalse() {
         Account account = new Account(name);
